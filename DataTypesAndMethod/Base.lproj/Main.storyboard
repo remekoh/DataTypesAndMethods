@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-ha-mww">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter second number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-7N-0Po">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-Lg-Wyr">
+                                <frame key="frameInset" minX="147" minY="189" width="101" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-AC-z0A">
+                                <state key="normal" title="Subtract">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="subtractButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAb-7w-cDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS0-Mz-rQ3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="f1c-XB-dJb"/>
+                                </constraints>
+                                <state key="normal" title="Multiply">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplyButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tl-eY-yI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VB-kQ-hGx">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="ueg-1G-B32"/>
+                                </constraints>
+                                <state key="normal" title="Divide">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="divideButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7f-Xf-OmX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-Bu-8Ll">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="SAg-aQ-g85"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncg-Wr-XUm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.41960784309999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kon-Bu-8Ll" firstAttribute="baseline" secondItem="9WA-AC-z0A" secondAttribute="baseline" id="4kR-mK-48C"/>
+                            <constraint firstItem="9VB-kQ-hGx" firstAttribute="trailing" secondItem="qEA-7N-0Po" secondAttribute="trailing" id="6ve-3V-fIN"/>
+                            <constraint firstItem="E6s-ha-mww" firstAttribute="trailing" secondItem="9WA-AC-z0A" secondAttribute="trailing" id="8QG-0q-FEW"/>
+                            <constraint firstItem="9VB-kQ-hGx" firstAttribute="leading" secondItem="kS0-Mz-rQ3" secondAttribute="trailing" constant="33" id="Akz-2B-Ycv"/>
+                            <constraint firstItem="9VB-kQ-hGx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Kgk-9c-G0M"/>
+                            <constraint firstItem="qEA-7N-0Po" firstAttribute="leading" secondItem="E6s-ha-mww" secondAttribute="trailing" constant="55" id="PdX-fD-Jp7"/>
+                            <constraint firstItem="9WA-AC-z0A" firstAttribute="baseline" secondItem="kS0-Mz-rQ3" secondAttribute="baseline" id="Q9o-ai-BQv"/>
+                            <constraint firstItem="kS0-Mz-rQ3" firstAttribute="baseline" secondItem="9VB-kQ-hGx" secondAttribute="baseline" id="dP1-eV-l0e"/>
+                            <constraint firstItem="kS0-Mz-rQ3" firstAttribute="leading" secondItem="9WA-AC-z0A" secondAttribute="trailing" constant="70" id="fUT-Xo-bNS"/>
+                            <constraint firstItem="E6s-ha-mww" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="iye-Ol-3qb"/>
+                            <constraint firstItem="E6s-ha-mww" firstAttribute="leading" secondItem="Kon-Bu-8Ll" secondAttribute="leading" id="rJl-cd-uw9"/>
+                            <constraint firstItem="Kon-Bu-8Ll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="slC-EI-wP2"/>
+                            <constraint firstItem="9WA-AC-z0A" firstAttribute="leading" secondItem="Kon-Bu-8Ll" secondAttribute="trailing" constant="23" id="tYx-WI-jd8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kon-Bu-8Ll" secondAttribute="bottom" constant="328" id="uL2-DX-Zqx"/>
+                            <constraint firstItem="E6s-ha-mww" firstAttribute="baseline" secondItem="qEA-7N-0Po" secondAttribute="baseline" id="v5G-Dc-9xg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="E6s-ha-mww" id="FXy-2J-BJn"/>
+                        <outlet property="resultsLabel" destination="aqQ-Lg-Wyr" id="pzx-S9-5We"/>
+                        <outlet property="secondTextField" destination="qEA-7N-0Po" id="K2M-Vq-PXW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
